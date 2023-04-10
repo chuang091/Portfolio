@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spatial Statistics</title>
+    <link rel="stylesheet" href="detail.css">
+    <script src="detail.js" defer></script>
+    <script src="https://kit.fontawesome.com/b146b855cb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Spatial Statistics</h1>
+    </header>
+
+    <nav id="navbar">
+        <a href="#Medium">Tiny Project Posted on Medium</a>
+        <a href="#Convenience_store">Convenience store research</a>
+    </nav>
+
+
+    <main>
+        <section id="Medium">
+            <h2>Tiny Project Posted on Medium</h2>
+            <h3>Spatial interpolation</h3>
+            <p>In this project, we utilize the Kriging method for spatial interpolation to visualize the public bicycle
+                supply quantities in Taipei.</p>
+            <img src="Spatial stat/Kriging.png" alt="Your Image" class="demo">
+            <a href="https://medium.com/@thomaschuang/arcgis-youbike-2-0-%E4%BE%9B%E7%B5%A6%E9%87%8F%E8%A6%96%E8%A6%BA%E5%8C%96%E5%88%9D%E6%8E%A2-ab6d0791358d"
+                class="info-button" role="button">Medium link</a>
+            <h3>Average Nearest Neighbor</h3>
+            <p>This research article explores the question, "Why do different brands of convenience stores tend to
+                locate near each other?" We incorporate the concept of Hotelling's model of spatial competition and
+                employ the Average Nearest Neighbor (ANN) method to substantiate our findings.</p>
+            <img src="Spatial stat/Ann.jpg" alt="Your Image" class="demo">
+            <a href="https://medium.com/@thomaschuang/using-analyze-of-average-nearest-neighbor-prove-that-hotelling-model-of-spatial-competition-is-36700a4ccd85"
+                class="info-button" role="button">Medium link</a>
+            <h3>Moran's I and LISA</h3>
+            <p>This article introduces Moran's Index, which we apply to compare population density and random variables.
+                We calculate their respective Moran's Indices to assess spatial correlation. Furthermore, we employ
+                Local Indicators of Spatial Association (LISA) to identify areas with relatively lower or higher values
+                compared to their neighboring features.</p>
+            <img src="Spatial stat/Morans.jpg" alt="Your Image" class="demo">
+            <a href="https://medium.com/@thomaschuang/%E5%A6%82%E4%BD%95%E5%88%86%E6%9E%90%E7%A9%BA%E9%96%93%E4%B8%AD%E7%9A%84%E5%BD%BC%E6%AD%A4%E5%9C%96%E5%BE%B5%E7%9A%84%E9%97%9C%E4%BF%82-%E7%A9%BA%E9%96%93%E7%89%88%E7%9B%B8%E9%97%9C%E4%BF%82%E6%95%B8-%E7%A9%BA%E9%96%93%E8%87%AA%E7%9B%B8%E9%97%9C-morans-i-54026a403ed"
+                class="info-button" role="button">Medium link</a>
+            <h3>ModelBuilder</h3>
+            <p>This article provides an introduction to the fundamental concepts of ModelBuilder, covering variable
+                settings, various types of blocks, and the overall structure of ModelBuilder. Additionally, we
+                demonstrate the application of these concepts by using public bicycle point data (YouBike) to create
+                multiple ring buffers with the help of a custom geoprocessing tool.</p>
+            <img src="Spatial stat/ModelBuilder.jpg" alt="Your Image" class="demo">
+            <img src="Spatial stat/MBResult.jpg" alt="Your Image" class="demo">
+            <a href="https://medium.com/@thomaschuang/using-modelbuilder-in-arcgis-to-deal-with-repeatedly-analyse-817d684fe926"
+                class="info-button" role="button">Medium link</a>
+        </section>
+        <section id="Convenience_store">
+            <h2>Convenience store research</h2>
+            <p>This research is intended for participation in this year's national GIS contest. It focuses on
+                identifying patterns of high convenience store density in Taipei and investigating potential variables
+                that may influence the decision to open a convenience store or not.</p>
+            <h3>Spatial Regression</h3>
+            <p>The map displayed below illustrates the residuals of Multi-scale Geographically Weighted Regression
+                (MGWR) and Ordinary Least Squares (OLS) results for convenience store locations. It is evident that MGWR
+                (left) is more discrete than OLS (right), and MGWR's R-squared value is higher than that of OLS. This
+                indicates that MGWR offers greater explanatory power compared to OLS.</p>
+            <img src="Spatial stat/Regression.png" alt="Your Image" class="demo">
+            <h3>Suitability Analysis</h3>
+            <p>The map shown below demonstrates the application of a suitability modeler in ArcGIS Pro. We utilize five
+                variables for this analysis, encompassing metro, bus, and public bicycle system accessibility,
+                population density, and road node density. Additionally, I have applied the results to a 3D
+                representation to enhance clarity and visualization.</p>
+            <img src="Spatial stat/suitability.png" alt="Your Image" class="demo">
+            <h3>Space Time Cube</h3>
+            <p>The map displayed below forecasts convenience store counts for the next three years per quadrat using
+                Space Time Pattern Mining Tools. Each quadrat has its own time series, and we employ three types of
+                forecasting methods: random forest, curve fitting, and exponential smoothing. Ultimately, we select the
+                best-fitting method to represent the predictions for each quadrat, as shown on the Right.<br>The
+                distribution of the chosen prediction methods is depicted on the left.</p>
+            <img src="Spatial stat/圖片1.jpg" alt="Your Image" class="demo">
+            <p>The image below showcases a Space Time Cube Gi* hot spot visualization, representing my recent research on convenience store location strategies. Each cube corresponds to one year in a specific location, while different colors indicate varying degrees of confidence levels.</p>
+            <img src="Spatial stat/timeSpace.png" alt="Your Image" class="demo">
+        </section>
+    </main>
+
+    <footer>
+        <h3>Follow Me</h3>
+        <ul class="social-icons">
+            <li><a href="https://www.linkedin.com/in/%E5%AD%90%E5%AF%AC-%E8%8E%8A-3a19b6246/" target="_blank" class="linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="https://medium.com/@thomaschuang" target="_blank" class="medium"><i class="fab fa-medium-m"></i></a></li>
+            <li><a href="https://github.com/chuang091" target="_blank" class="github"><i class="fab fa-github"></i></a></li>
+            <li><a href="mailto:109207332@g.nccu.edu.tw" target="_blank" class="email"><i class="fas fa-envelope"></i></a></li>
+        </ul>
+        <div class="footer-bottom">
+            <p>© 2023 Thomas Chuang. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

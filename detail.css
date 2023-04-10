@@ -1,0 +1,217 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #EEF1FF; /* 將背景色設置為 EEF1FF */
+    color: #000; /* 將字體顏色設置為黑色 */
+}
+
+.demo {
+    width: auto;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+header {
+    background-color: #5b5efb;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #9A9AE8;
+    padding: 1rem;
+    z-index: 100;
+}
+
+nav a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #D2DAFF;
+    color: #ffffff;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background-color: #9A9AE8;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #D2DAFF;
+}
+
+.info-button {
+    display: inline-block;
+    width:auto;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    background-color: #9A9AE8;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.25rem; /* 將字體大小設置為 h3 的大小 */
+    line-height: 1.2; /* 設置適當的行高 */
+    text-decoration: none; /* 移除底線 */
+   
+    margin: 0.5rem 0; /* 添加適當的邊距 */
+    display: inline-block; /* 設置為內聯塊以應用邊距和填充 */
+}
+
+.info-button:hover {
+background-color: #D2DAFF;
+}
+
+main {
+    padding-left: 20px; /* 將 main 元素左側的 padding 設為 20 像素 */
+    padding-right: 20px; /* 將 main 元素右側的 padding 設為 20 像素 */
+}
+
+#more-projects {
+display: block;
+margin: 0 auto;
+padding: 1rem;
+background-color: #9A9AE8;
+color: #ffffff;
+border: none;
+cursor: pointer;
+}
+
+#more-projects:hover {
+background-color: #D2DAFF;
+}
+
+/* Sticky Navbar */
+nav.top {
+position: fixed;
+width: 100%;
+top: 0;
+}
+
+nav.top a {
+background-color: #9A9AE8;
+color: #ffffff;
+}
+
+nav.top a:hover {
+background-color: #D2DAFF;
+color: #ffffff;
+}    
+
+iframe{
+    height: 400px;
+}
+.demo2 {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+/* Footer */
+footer {
+    background-color: #9A9AE8;
+    padding: 30px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 20px;
+    color: #ffffff;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section li {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons li {
+    margin-right: 20px;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    color: #ffffff;
+}
+footer {
+    background-color: #9A9AE8;
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+}
+
+h3 {
+    margin-bottom: 0.5rem;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline;
+}
+
+.social-icons a {
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 0 15px;
+}
+
+.social-icons .linkedin:hover {
+    color: #0077B5;
+}
+
+.social-icons .medium:hover {
+    color: #121212;
+}
+
+.social-icons .github:hover {
+    color: #171515;
+}
+
+.social-icons .email:hover {
+    color: #D44638;
+}
